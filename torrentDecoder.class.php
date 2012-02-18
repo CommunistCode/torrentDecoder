@@ -30,10 +30,10 @@
     }
 
     public function getFiles() {
-  
+      
+      $torrentFiles = array();
+      
       if (isset($this->decodedTorrent['info']['files'])) {
-
-        $torrentFiles = array();
 
         foreach ($this->decodedTorrent['info']['files'] as $fileArray) {
 
